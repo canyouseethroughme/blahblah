@@ -2,12 +2,13 @@ body{
     background-image: url("marios-wallpaper.jpg");
     background-attachment: fixed;
     background-size: 100% 100%;
-    margin-top: 73vh;
+    margin-top: 72vh;
 }
 img{
     margin-left: 20px;
 }
 .buttons{
+    margin-top: 5px;
     width: 700px;
     margin-left: 200px;
 }
@@ -110,11 +111,12 @@ button{
 /*glow*/
 
 .glowCSS{
-    animation: glowKey 3s linear infinite;
+    animation: glowKey 3s linear 5;
 }
 @keyframes glowKey {
     30% {
-        box-shadow: 0px 0px 100px 30px yellow;
+
+        filter: drop-shadow(15px 10px 10px rgba(255, 255, 1, 1));
     }
 }
 
@@ -125,7 +127,7 @@ button{
 }
 @keyframes move2zeroKey {
     to {
-        transform: translate(-1000px, 0px);
+        transform: translate(0px, -4000px);
     }
 }
 
@@ -202,27 +204,34 @@ button{
 /*speak*/
 
 .speakCSS{
-    animation: speakKey 2s linear 3;
+    animation: speakKey .5s linear 3;
 }
 @keyframes speakKey{
-    30%{
-        transform: rotateY(-40deg);
+    from{
+        transform: rotateZ(-10deg);
+    }
+    to{
+        transform: rotateZ(10deg);
     }
 
 }
 
 /*mirror*/
 
-.mirorCSS{
-    animation: mirrorKey 2s linear 3;
+.mirrorCSS{
+    animation: mirrorKey 3s linear 3;
 }
-@keyframes mirrorKey{
-    from {
+@keyframes mirrorKey {
+    33% {
         transform: scaleX(1);
     }
-    to {
+    66% {
         transform: scaleX(-1);
     }
+    99% {
+        transform: scaleX(1);
+    }
+
 }
 
 
