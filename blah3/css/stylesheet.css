@@ -214,14 +214,14 @@ button{
 /*mirror*/
 
 .mirorCSS{
-    animation: mirrorKey 3s linear 3;
+    animation: mirrorKey 2s linear 3;
 }
 @keyframes mirrorKey{
     from {
         transform: scaleX(1);
     }
     to {
-        transform: scaleX(0);
+        transform: scaleX(-1);
     }
 }
 
