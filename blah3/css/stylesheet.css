@@ -1,0 +1,233 @@
+body{
+    background-image: url("marios-wallpaper.jpg");
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    margin-top: 73vh;
+}
+img{
+    margin-left: 20px;
+}
+.buttons{
+    width: 700px;
+    margin-left: 200px;
+}
+button{
+    opacity: 0.9;
+    background-color: darkgoldenrod;
+    width: 90px;
+    height: 28px;
+    font-size: 15px;
+}
+
+/*shake*/
+
+.shakeCSS{
+    animation: shakeItBaby .1s 4;
+}
+@keyframes shakeItBaby {
+    25%{
+        transform: translateX(-10px);
+    }
+    75%{
+        transform: translateX(10px);
+    }
+}
+
+/*jumping*/
+
+.jumpingCSS{
+    animation: onlyJump 3s linear infinite;
+}
+@keyframes onlyJump {
+    10%{
+        transform: translate(100px, -80px);
+    }
+    20%{
+        transform: translate(200px, 0px);
+    }
+    30%{
+        transform: translate(300px, -80px);
+    }
+    40%{
+        transform: translate(400px, 0px);
+    }
+    50%{
+        transform: translate(500px, -80px);
+    }
+    60%{
+        transform: translate(400px, 0px);
+    }
+    70%{
+        transform: translate(300px, -80px);
+    }
+    80%{
+        transform: translate(200px, 0px);
+    }
+    90%{
+        transform: translate(100px, -80px);
+    }
+}
+
+/*move*/
+
+.moveCSS{
+    animation: moveKey 3s linear infinite;
+}
+@keyframes moveKey {
+    from{
+        transform: translateX(-100px);
+    }
+    to{
+        transform: translateX(3000px);
+    }
+}
+
+/*scale*/
+
+.scaleCSS{
+    animation: scaleKey 2s linear infinite;
+}
+@keyframes scaleKey {
+    50%{
+        transform: scale(0);
+    }
+}
+
+/*fade*/
+
+.fadeCSS{
+    animation: fadeKey 3s linear infinite;
+}
+@keyframes fadeKey {
+    50%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 10;
+    }
+}
+
+/*glow*/
+
+.glowCSS{
+    animation: glowKey 3s linear infinite;
+}
+@keyframes glowKey {
+    30% {
+        box-shadow: 0px 0px 100px 30px yellow;
+    }
+}
+
+/*move2zero*/
+
+.move2zeroCSS{
+    animation: move2zeroKey 3s ease-out 3;
+}
+@keyframes move2zeroKey {
+    to {
+        transform: translate(-1000px, 0px);
+    }
+}
+
+/*fall*/
+
+.fallCSS{
+    animation: fallKey .8s ease-in 3;
+}
+@keyframes fallKey {
+    from{
+        transform: translateY(-40px);
+    }
+    to {
+        transform: translateY(400px);
+    }
+}
+
+/*rotate*/
+
+.rotateCSS {
+    animation: rotateKey .5s linear 3;
+}
+
+@keyframes rotateKey {
+    to {
+        transform: rotateZ(-360deg);
+    }
+}
+
+
+/*jump*/
+
+.jumpCSS{
+    animation: oneJump .7s linear 3;
+}
+@keyframes oneJump {
+    50% {
+        transform: translate(0px, -100px);
+    }
+    100% {
+        transform: translate(0px, 0px);
+    }
+}
+
+/*move2-30%*/
+
+.moveToCSS{
+    animation: moveTo 1.5s ease-in 3;
+}
+@keyframes moveTo {
+    from {
+        transform: translateX(-100px);
+    }
+    to {
+        transform: translateX(30vw);
+    }
+}
+
+/*moveFrom30%*/
+
+.moveFromCSS{
+    animation: moveFrom 2s linear 3;
+}
+@keyframes moveFrom {
+    from{
+        transform: translateX(30vw);
+    }
+    to{
+        transform: translateX(3000px);
+    }
+}
+
+
+/*speak*/
+
+.speakCSS{
+    animation: speakKey 2s linear 3;
+}
+@keyframes speakKey{
+    30%{
+        transform: rotateY(-40deg);
+    }
+
+}
+
+/*mirror*/
+
+.mirorCSS{
+    animation: mirrorKey 3s linear 3;
+}
+@keyframes mirrorKey{
+    from {
+        transform: scaleX(1);
+    }
+    to {
+        transform: scaleX(0);
+    }
+}
+
+
+
+
+
+
+
