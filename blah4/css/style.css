@@ -1,0 +1,22 @@
+.griffinCSS{
+    animation: scaleTo 2s linear 1;
+}
+
+@keyframes scaleTo {
+    100%{
+        transform: scale(0);
+    }
+}
+
+.fadeCSS{
+    animation: fadeKey 3s linear forwards;
+}
+
+@keyframes fadeKey {
+    50%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 10;
+    }
+}
