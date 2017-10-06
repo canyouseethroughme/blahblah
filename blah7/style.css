@@ -1,0 +1,28 @@
+.myBox {
+    width: 400px;
+    height: 400px;
+    background: lightblue;
+    transition: background-color 2s;
+}
+.red{
+    background-color: red;
+}
+.orange{
+    background-color: orange;
+}
+.yellow{
+    background-color: yellow;
+}
+.green{
+    background-color: green;
+}
+.blue{
+    background-color: blue;
+}
+.purple{
+    background-color: purple;
+}
+.violet{
+    background-color: violet;
+}
+
