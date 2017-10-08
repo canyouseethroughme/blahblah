@@ -100,14 +100,22 @@ function makeMirror (){
 
 
 let chara = document.querySelector("img.donkeyKong");
+let prin = document.querySelector("img.princessMario");
 
 let fightButton = document.querySelector('#fight');
+fightButton.addEventListener('click', makeKiss)
 fightButton.addEventListener('click', makeFight)
 function makeFight (){
     console.log("make Fight");
     chara.classList.toggle("donkeyKongCSS");
-    char.classList.toggle("marioCSS")
+    char.classList.toggle("marioCSS");
 }
+
+function makeKiss(){
+    console.log("make Kiss");
+    prin.classList.toggle("princessCSS")
+}
+
 
 
 
