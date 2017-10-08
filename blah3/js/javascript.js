@@ -99,6 +99,17 @@ function makeMirror (){
 }
 
 
+let chara = document.querySelector("img.donkeyKong");
+
+let fightButton = document.querySelector('#fight');
+fightButton.addEventListener('click', makeFight)
+function makeFight (){
+    console.log("make Fight");
+    chara.classList.toggle("donkeyKongCSS");
+    char.classList.toggle("marioCSS")
+}
+
+
 
 
 

@@ -2,18 +2,29 @@ body{
     background-image: url("marios-wallpaper.jpg");
     background-attachment: fixed;
     background-size: 100% 100%;
-    margin-top: 72vh;
+
 }
-img{
-    margin-left: 20px;
+img.mario{
+    position: absolute;
+    bottom: 70px;
+    left: 50px;
 }
+
+img.donkeyKong{
+    position: absolute;
+    bottom: 70px;
+    right: 50px;
+}
+
 .buttons{
-    margin-top: 5px;
-    width: 700px;
-    margin-left: 200px;
+    position: absolute;
+    top:100px;
+    left:400px;
+    right: 400px;
+
 }
 button{
-    opacity: 0.9;
+    filter: opacity(80%);
     background-color: darkgoldenrod;
     width: 90px;
     height: 28px;
@@ -115,8 +126,7 @@ button{
 }
 @keyframes glowKey {
     30% {
-
-        filter: drop-shadow(15px 10px 10px rgba(255, 255, 1, 1));
+        filter: drop-shadow(15px -10px 10px rgba(255, 255, 1, 1));
     }
 }
 
@@ -138,7 +148,7 @@ button{
 }
 @keyframes fallKey {
     from{
-        transform: translateY(-40px);
+        transform: translateY(-30px);
     }
     to {
         transform: translateY(400px);
@@ -219,21 +229,84 @@ button{
 /*mirror*/
 
 .mirrorCSS{
-    animation: mirrorKey 3s linear 3;
+    animation: mirrorKey 1s linear 1 forwards;
+
 }
 @keyframes mirrorKey {
     33% {
         transform: scaleX(1);
     }
-    66% {
+    to {
         transform: scaleX(-1);
     }
-    99% {
-        transform: scaleX(1);
-    }
+
+
 
 }
 
+/*!!!!!!!!FIGHT!!!!!!!*/
+
+#donkey{
+    right: -400px;
+}
+.donkeyKongCSS {
+    animation: fightKey ease-out;
+    animation-duration: 4s;
+    animation-fill-mode: forwards;
+}
+@keyframes fightKey {
+
+    20%{
+        transform: translateX(-1000px);
+    }
+    99%{
+        transform: translate(-1000px, 0px);
+    }
+    to{
+        transform: translate(-1000px, 300px);
+    }
+
+
+
+
+}
+
+.marioCSS {
+    animation: fightMKey 4s linear forwards;
+}
+@keyframes fightMKey {
+    40%{
+        transform: translateX(200px);
+    }
+    50%{
+        transform: translate(350px, -150px);
+    }
+    60%{
+        transform: translate(450px, -400px);
+    }
+    70%{
+        transform: translate(450px, -150px);
+    }
+    75%{
+        transform: translate(450px, -400px);
+    }
+    80%{
+        transform: translate(450px, -150px);
+    }
+    85%{
+        transform: translate(450px, -400px);
+    }
+    90%{
+        transform: translate(450px, -150px);
+    }
+    95%{
+        transform: translate(450px, -400px);
+    }
+    100%{
+        transform: translate(450px, 0px);
+    }
+
+}
 
 
 
